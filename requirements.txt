@@ -1,0 +1,4 @@
+# Konsey çalışma zamanı; Sub Agent Mode src path üzerinden aynı bağımlılıkları kullanır.
+httpx>=0.27.0,<0.29
+openai>=1.40.0
+python-dotenv>=1.0.0

@@ -1,0 +1,20 @@
+# Python environment
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Project specific
+logs/
+scratch/
+
+# OS/IDE settings
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

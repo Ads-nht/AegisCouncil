@@ -1,0 +1,53 @@
+{
+  "system_name": "Antigravity LLM Council",
+  "version": "1.5.0 Premium",
+  "intended_users": ["AI Agents", "Sub-Agents", "Autonomous Orchestrators"],
+  "objective": "High-fidelity code audit, security screening (OWASP/CWE), and architectural synthesis via multi-expert consensus.",
+  "usage_protocol": {
+    "tool_definition": {
+      "name": "llm_council_audit",
+      "description": "Performs a 3-stage expert consensus audit on code or technical topics using Security, Architecture, and Vision specialists.",
+      "parameters": {
+        "topic": "The code string or technical topic to audit."
+      }
+    },
+    "invocation_method": {
+      "type": "Shell/CLI",
+      "command": "python /home/ads/Antigravity/Projeler/LLM_Council/src/council_run.py \"<TOPIC_OR_CODE>\"",
+      "input_requirements": "Topic string or complete source code blob."
+    },
+    "communication_language": {
+      "internal": "Technical English / Structured JSON",
+      "external_report": "Professional Turkish (Synthesis)"
+    },
+    "stages": [
+      {
+        "id": 1,
+        "name": "Consultation",
+        "input": "User Topic",
+        "output": "3x Specialist JSON Reports (Thought + Report)"
+      },
+      {
+        "id": 2,
+        "name": "Deep Transparency Peer Review",
+        "action": "Agents analyze peer 'thought' fields",
+        "objective": "Logical flaw detection & Bias correction"
+      },
+      {
+        "id": 3,
+        "name": "Chairperson Synthesis",
+        "action": "Decoding AI-to-AI dialogue",
+        "output": "Final Premium Turkish Report"
+      }
+    ]
+  },
+  "expert_capabilities": {
+    "Security": "OWASP Top 10, CWE Mapping, Supply Chain vulnerability detection.",
+    "Technique": "SOLID, Clean Architecture, Scalability bottlenecks, Technical Debt.",
+    "Vision": "Market positioning, Leapfrog innovation, UX growth strategies."
+  },
+  "integration_hints": {
+    "handling_outputs": "The CLI output is a Markdown report. Use regex to extract the 'Sentez Raporu' or 'Debug' sections if specific data parsing is needed.",
+    "ideal_context": "Inject this JSON into your system prompt when you need to delegate complex decision-making to the council."
+  }
+}
