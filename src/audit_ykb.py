@@ -28,15 +28,15 @@ async def main():
                 context += f"## FILE: {os.path.basename(path)} ({path})\n"
                 context += f.read() + "\n\n"
     
-    topic = f"""PROJE: YouTube Knowledge Base (YKB) - v3.0.0 TOTAL MASTERY Final Denetimi
-GÖREV: Aşağıdaki nihai kodları (v3.0.0) inceleyerek; Persistence (Vault), Batch Processing ve Smart Polling 
-uygulamalarını denetle. Projenin 'Master Grade' sertifikasyonuna hazır olup olmadığını ve siber güvenlik 
-açısından (XSS/SSRF/CWE) kusursuzluğunu doğrula.
+    topic = f"""PROJECT: YouTube Knowledge Base (YKB) - v3.0.0 TOTAL MASTERY Final Audit
+TASK: Review the final code (v3.0.0) below to audit the Persistence (Vault), Batch Processing, and Smart Polling
+implementations. Verify whether the project is ready for 'Master Grade' certification and validate its security
+compliance (XSS/SSRF/CWE).
 
-ÖZELLİKLE SORULAN SORULAR:
-1. SQLite Vault (Persistence) yapısı güvenli ve verimli mi?
-2. Smart Polling (Exponential Backoff) algoritması doğru kurgulanmış mı?
-3. Mevcut 'Master' mimarisinde hala gözden kaçan bir 'Technical Gap' var mı?
+SPECIFIC AUDIT QUESTIONS:
+1. Is the SQLite Vault (Persistence) architecture secure and efficient?
+2. Is the Smart Polling (Exponential Backoff) algorithm correctly designed?
+3. Are there any remaining 'Technical Gaps' overlooked in the current 'Master' architecture?
 
 {context}
 """
@@ -49,7 +49,7 @@ açısından (XSS/SSRF/CWE) kusursuzluğunu doğrula.
     with open(log_path, 'w') as f:
         f.write(report)
         
-    print(f"✅ YKB Denetimi tamamlandı: {log_path}")
+    print(f"✅ YKB Audit completed: {log_path}")
 
 if __name__ == "__main__":
     asyncio.run(main())

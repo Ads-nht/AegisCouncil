@@ -1,39 +1,77 @@
-# 🏛️ Antigravity LLM Council (v1.5.0 Premium)
+# 🏛️ AegisCouncil (v1.5.0 Premium)
+### Autonomous 3-Agent LLM Consensus System for Code Reviews, Security Audits, and Architectural Checks
 
-Antigravity LLM Council, karmaşık projeleri, siber güvenlik açıklarını ve mimari yapıları denetlemek için tasarlanmış **3 aşamalı otonom bir yapay zeka konsensüs sistemidir.**
+[English](README.md) | [Türkçe](README_TR.md)
 
-## 🚀 Öne Çıkan Özellikler
-
-- **Süper Uzman Kadrosu:** Siber Güvenlik (OWASP/CWE), Kıdemli Yazılım Mimarisi (SOLID/Clean Arch) ve Ürün Vizyonu alanlarında uzmanlaşmış 3 farklı ajan.
-- **Deep Transparency (Derin Şeffaflık):** Uzmanlar birbirlerinin sadece sonuçlarını değil, iç düşünce süreçlerini (thoughts) de görerek karşılıklı denetim (peer-critique) yaparlar.
-- **Inner Dialogue Protocol:** Konsey üyeleri kendi aralarında en verimli teknik dilde (İngilizce/JSON) iletişim kurar, Chairperson son sonucu kullanıcıya Türkçe olarak sentezler.
-- **Bağımsız Denetim:** Farklı LLM modellerinin (Grok, Gemini, GPT-4o) zekasını birleştirerek "blind spot" riskini minimize eder.
-
-## 🛠️ Kurulum ve Kullanım
-
-### Gereksinimler
-- Antigravity Sub Agent Mode (Dahili bağımlılık)
-- Python 3.10+
-- OpenRouter API Anahtarı
-
-### Hızlı Çalıştırma
-```bash
-cd /home/ads/Antigravity/Projeler/LLM_Council
-./.venv/bin/python src/council_run.py "Projenizi veya konunuzu buraya yazın"
-```
-
-## 🏗️ Mimari Yapı
-
-1. **Aşama (Consultation):** Uzmanlar konuyu analiz eder (Teknik İngilizce/JSON).
-2. **Aşama (Ranking & Critique):** Uzmanlar birbirlerinin düşünce süreçlerini kritik edip sıralama yapar.
-3. **Aşama (Synthesis):** Chairperson tüm veriyi deşifre eder ve nihai Premium Türkçe raporu oluşturur.
-
-## 📄 Dosya Yapısı
-- `src/council_orchestrator.py`: Ana yönetim mantığı ve aşama kontrolü.
-- `src/council_prompts.py`: Uzman sistem promptları.
-- `src/council_run.py`: CLI giriş noktası.
-- `docs/hafiza.md`: Sistem belleği ve protokol dökümantasyonu.
-- `docs/ai_usage_guide.json`: Diğer AI ajanları için kullanım kılavuzu.
+AegisCouncil is an advanced, 3-stage autonomous AI consensus system designed to analyze, audit, and critique complex codebases, software architectures, and cybersecurity vulnerabilities. By combining the distinct intelligence of multiple specialized AI agents, AegisCouncil eliminates individual model "blind spots" and delivers highly rigorous, objective technical reviews.
 
 ---
-*Antigravity LLM Council - "The path to 10x engineering leads through collective intelligence."*
+
+## 🚀 Key Features
+
+- **Specialized AI Experts:** Orchestrates 3 distinct specialist agents:
+  - **Technical Expert (Senior Software Architect):** Focuses on code quality, design patterns (SOLID), scalability, and performance.
+  - **Security Auditor (Senior Cybersecurity Engineer):** Scans for logical flaws and cybersecurity vulnerabilities (OWASP, CWE), producing a calculated Security Integrity Score.
+  - **Visionary (Product Visionary & AI Architect):** Identifies modern technological innovations and long-term growth opportunities.
+- **Deep Transparency Protocol:** Peer agents do not merely see final answers; they inspect each other's raw internal thought processes (`thought` fields) to identify inconsistencies or logical fallacies.
+- **Inner Dialogue Protocol:** Council members communicate in a dense, structured technical format (English/JSON) for maximum precision, which is then synthesized by the Chairperson into a premium Turkish report for the user.
+- **Multi-Model Consensus:** Designed to run across various LLMs (e.g., Grok, Gemini, GPT-4o) via OpenRouter to ensure unbiased, multi-perspective results.
+
+---
+
+## 🏗️ Consensus Architecture
+
+```mermaid
+graph TD
+    User([User Audit Request]) -->|Submit Topic/Code| Orch[CouncilOrchestrator]
+    Orch -->|Consultation Stage| Stage1[Stage 1: Specialists Analyze Context]
+    Stage1 -->|Expose thoughts & responses| Stage2[Stage 2: Cross-Critique & Peer Ranking]
+    Stage2 -->|Debate & reviews| Stage3[Stage 3: Chairperson Sentez & Decoding]
+    Stage3 -->|Final Consensus Report| Output([Premium Markdown Report])
+```
+
+---
+
+## 🛠️ Requirements & Setup
+
+### Prerequisites
+- Python 3.10+
+- OpenRouter API Key configured in your environment variables.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:Ads-nht/AegisCouncil.git
+   cd AegisCouncil
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Execution
+Run an audit by passing your topic or local context file path as an argument:
+```bash
+python src/council_run.py "Your question, topic, or file path to audit"
+```
+
+---
+
+## 📄 Repository Layout
+
+- `src/council_orchestrator.py`: Core orchestration flow coordinating the 3-stage consensus pipeline.
+- `src/council_prompts.py`: System prompt catalog containing optimized instructions for each agent.
+- `src/council_run.py`: Command-line execution entrypoint with local file loading support.
+- `docs/hafiza.md`: Technical ledger documenting system memory and internal protocols.
+- `docs/ai_usage_guide.json`: structured handbook for other AI agents to execute council pipelines.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.

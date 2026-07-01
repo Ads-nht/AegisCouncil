@@ -65,10 +65,10 @@ async def main():
     with open(log_path, 'w') as f:
         f.write(report)
         
-    print(f"\n✅ Konsey toplantısı bitti. Rapor oluşturuldu: {log_path}")
-    print("\n--- RAPOR BAŞLANGICI ---\n")
+    print(f"\n✅ Council session finished. Report generated: {log_path}")
+    print("\n--- START OF REPORT ---\n")
     print(report)
-    print("\n--- RAPOR SONU ---\n")
+    print("\n--- END OF REPORT ---\n")
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -21,8 +21,8 @@ async def main():
                 context += f"## FILE: {os.path.basename(path)}\n"
                 context += f.read() + "\n\n"
     
-    topic = f"""PROJE: Antigravity v2.1 Documentation & Handover Protocol
-GÖREV: Aşağıdaki birincil kanıtları kullanarak protokolün teknik güvenliğini ve AI devir (handover) verimliliğini denetle.
+    topic = f"""PROJECT: Antigravity v2.1 Documentation & Handover Protocol
+TASK: Audit the technical safety of the protocol and AI handover efficiency using the following primary evidence.
 
 {context}
 """
@@ -34,7 +34,7 @@ GÖREV: Aşağıdaki birincil kanıtları kullanarak protokolün teknik güvenli
     with open(log_path, 'w') as f:
         f.write(report)
         
-    print(f"✅ Final denetim tamamlandı: {log_path}")
+    print(f"✅ Final audit completed: {log_path}")
 
 if __name__ == "__main__":
     asyncio.run(main())

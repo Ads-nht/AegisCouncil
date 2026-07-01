@@ -29,20 +29,20 @@ async def main():
                 context += "python\n" if path.endswith(".py") else "markdown\n"
                 context += f.read() + "\n```\n\n"
     
-    topic = f"""PROJE: Site Knowledge Oracle (SKO) - v0.3.1 ELITE MASTER GRADE Sertifikasyonu
-GÖREV: Aşağıdaki nihai kodları ve dökümantasyonu inceleyerek; SSRF Shield (DNS Safe Resolve), XSS Sanitization (Bleach) 
-ve Archivist (Autonomous Append) mantığını denetle. Projenin Antigravity v5.0+ standartlarına uygunluğunu doğrula.
+    topic = f"""PROJECT: Site Knowledge Oracle (SKO) - v0.3.1 ELITE MASTER GRADE Certification
+TASK: Review the final code and documentation below to audit the SSRF Shield (DNS Safe Resolve), XSS Sanitization (Bleach),
+and Archivist (Autonomous Append) logic. Verify the project's compliance with Antigravity v5.0+ standards.
 
-DENETİM KRİTERLERİ:
-1. SSRF Shield: DNS çözümleme mantığı TOCTOU açıklarına karşı dirençli mi? (socket.getaddrinfo kullanımı)
-2. Archivist Mantığı: Knowledge Base dosya güncelleme API çağrıları tutarlı ve güvenli mi?
-3. Vault Manager: SQLite WAL ve mutlak yol kullanımı doğru kurgulanmış mı?
-4. Dökümantasyon: 'AI-Ready' seviyesine ulaşılmış mı?
+AUDIT CRITERIA:
+1. SSRF Shield: Is the DNS resolution logic resilient to TOCTOU attacks? (socket.getaddrinfo usage)
+2. Archivist Logic: Are the Knowledge Base file update API calls consistent and secure?
+3. Vault Manager: Is the SQLite WAL and absolute path usage correctly designed?
+4. Documentation: Has it achieved 'AI-Ready' status?
 
 {context}
 """
     
-    print("🚀 SKO Elite Master Grade Audit Council Başlatılıyor...")
+    print("🚀 Starting SKO Elite Master Grade Audit Council...")
     council = CouncilOrchestrator()
     report = await council.run_council(topic)
     
@@ -51,7 +51,7 @@ DENETİM KRİTERLERİ:
     with open(log_path, 'w') as f:
         f.write(report)
         
-    print(f"\n✅ SKO Denetimi tamamlandı: {log_path}")
+    print(f"\n✅ SKO Audit completed: {log_path}")
 
 if __name__ == "__main__":
     asyncio.run(main())
