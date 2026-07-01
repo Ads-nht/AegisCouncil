@@ -36,7 +36,7 @@ graph TD
 
 ### Gereksinimler
 - Python 3.10+
-- Ortam değişkenlerinizde (environment variables) tanımlanmış OpenRouter API anahtarı.
+- Yapay zeka modellerini tetiklemek için OpenRouter API Anahtarı.
 
 ### Kurulum
 1. Depoyu bilgisayarınıza kopyalayın:
@@ -53,12 +53,18 @@ graph TD
    ```bash
    pip install -r requirements.txt
    ```
+4. API anahtarınızı tanımlayın:
+   ```bash
+   export OPENROUTER_API_KEY="openrouter_api_anahtariniz_buraya"
+   ```
 
 ### Kullanım
 Bir denetim başlatmak için konuyu veya yerel bir bağlam dosyası yolunu argüman olarak geçin:
 ```bash
 python src/council_run.py "Denetlemek istediğiniz konu, soru veya dosya yolu"
 ```
+
+Denetim raporları otomatik olarak konsola yazdırılır ve `logs/` dizini altına markdown dosyası olarak kaydedilir (Örn: `logs/council_report_*.md`).
 
 ---
 

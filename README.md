@@ -36,7 +36,7 @@ graph TD
 
 ### Prerequisites
 - Python 3.10+
-- OpenRouter API Key configured in your environment variables.
+- OpenRouter API Key (to invoke LLM models).
 
 ### Installation
 1. Clone the repository:
@@ -53,12 +53,18 @@ graph TD
    ```bash
    pip install -r requirements.txt
    ```
+4. Configure your API key:
+   ```bash
+   export OPENROUTER_API_KEY="your_openrouter_api_key_here"
+   ```
 
 ### Execution
 Run an audit by passing your topic or local context file path as an argument:
 ```bash
 python src/council_run.py "Your question, topic, or file path to audit"
 ```
+
+Audit reports are automatically printed to the console and saved under the `logs/` directory as markdown files (e.g., `logs/council_report_*.md`).
 
 ---
 
