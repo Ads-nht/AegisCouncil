@@ -15,5 +15,5 @@ Tüm majör teknik gelişimlerin kronolojik kaydı.
 ## [1.5.0] - 2026-04-10
 ### Added
 - **Deep Transparency:** Uzmanların birbirlerinin düşünce süreçlerini (thoughts) görebilmesi sağlandı.
-- **Translingual Synthesis:** İngilizce/JSON iç diyaloğunun Premium Türkçe rapora dönüştürülmesi.
+- **Translingual Synthesis:** İngilizce/JSON iç diyaloğunun detaylı Türkçe rapora dönüştürülmesi.
 - **Initial Pro-level Audit:** YouTube Knowledge Base projesi üzerinde ilk başarılı denetim gerçekleştirildi.

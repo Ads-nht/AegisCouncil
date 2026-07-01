@@ -1,9 +1,9 @@
-# 🧠 Antigravity LLM Council - Hafıza (Knowledge Base)
+# 🧠 AegisCouncil - Hafıza (Knowledge Base)
 
-Bu döküman, LLM Konseyi'nin tasarımı, protokolleri ve evrimi hakkında kritik bilgileri içerir. Otonom ajanlar için "Context" (bağlam) sağlar.
+Bu döküman, AegisCouncil'ın tasarımı, protokolleri ve evrimi hakkında kritik bilgileri içerir. Otonom ajanlar için "Context" (bağlam) sağlar.
 
-## 🪐 Genel Bakış (v1.5.0 Premium)
-LLM Konseyi, tek bir yapay zekanın "bias" (yanlılık) ve "blind spot" (kör nokta) sorunlarını aşmak için tasarlanmış 3 aşamalı bir otonom denetim sistemidir. **Bu sistem, Antigravity ekosistemindeki zorunlu 'Post-Project Audit' protokolünün (Bkz: [/Projeler/genel_hafiza.md](file:///home/ads/Antigravity/Projeler/genel_hafiza.md) Bölüm 5.2) ana yürütücü aracıdır.**
+## 🪐 Genel Bakış (v1.5.0)
+AegisCouncil, tek bir yapay zekanın "bias" (yanlılık) ve "blind spot" (kör nokta) sorunlarını aşmak için tasarlanmış 3 aşamalı bir otonom denetim sistemidir. **Bu sistem, Antigravity ekosistemindeki zorunlu 'Post-Project Audit' protokolünün (Bkz: [/Projeler/genel_hafiza.md](file:///home/ads/Antigravity/Projeler/genel_hafiza.md) Bölüm 5.2) ana yürütücü aracıdır.**
 
 ## 🛡️ Protokoller (Protocols)
 
@@ -14,7 +14,7 @@ Uzmanlar (Teknik, Güvenlik, Vizyoner) iç iletişimlerinde (Consultation & Rank
 Konsey üyeleri birbirlerinin sadece final raporlarını değil, **thought (akıl yürütme)** süreçlerini de görebilirler. `return_full=True` ile tüm State aktarılır.
 
 ### 3. Translingual Synthesis
-İç İngilizce/JSON diyaloğu, Chairperson tarafından çözümlenir ve kullanıcıya **Premium Türkçe** rapor olarak sunulur.
+İç İngilizce/JSON diyaloğu, Chairperson tarafından çözümlenir ve kullanıcıya **detaylı Türkçe** rapor olarak sunulur.
 
 ## 🏗️ Mimari (Architecture)
 - **Orchestration:** `council_orchestrator.py`

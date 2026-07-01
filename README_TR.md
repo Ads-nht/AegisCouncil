@@ -1,4 +1,4 @@
-# 🏛️ AegisCouncil (v1.5.0 Premium)
+# 🏛️ AegisCouncil (v1.5.0)
 ### Kod İnceleme, Güvenlik Denetimleri ve Mimari Analizler İçin Otonom 3 Ajanlı LLM Konsensüs Sistemi
 
 [English](README.md) | [Türkçe](README_TR.md)
@@ -14,7 +14,7 @@ AegisCouncil; karmaşık kod tabanlarını, yazılım mimarilerini ve siber güv
   - **Güvenlik Denetçisi (Senior Cybersecurity Engineer):** Siber güvenlik açıklarını (OWASP, CWE) ve mantıksal hataları tarayarak nesnel bir Güvenlik Skorlama Puanı üretir.
   - **Vizyoner (Product Visionary & AI Architect):** Modern teknolojik inovasyonları ve uzun vadeli ürün büyüme stratejilerini belirler.
 - **Derin Şeffaflık Protokolü (Deep Transparency):** Uzman ajanlar birbirlerinin sadece nihai raporlarını değil, iç düşünce süreçlerini de (`thought` alanları) inceleyerek mantıksal boşlukları ve çelişkileri yakalar.
-- **İç İletişim Protokolü:** Konsey üyeleri kendi aralarında en verimli teknik dilde (İngilizce/JSON) haberleşir; Chairperson tüm bu ham iç diyaloğu analiz ederek kullanıcıya Premium kalitede Türkçe bir rapor sentezler.
+- **İç İletişim Protokolü:** Konsey üyeleri kendi aralarında en verimli teknik dilde (İngilizce/JSON) haberleşir; Chairperson tüm bu ham iç diyaloğu analiz ederek kullanıcıya detaylı Türkçe bir rapor sentezler.
 - **Çoklu Model Konsensüsü:** Grok, Gemini, GPT-4o gibi farklı LLM modellerini OpenRouter üzerinden koordine ederek tarafsız ve çok perspektifli sonuçlar sağlar.
 
 ---
@@ -27,7 +27,7 @@ graph TD
     Orch -->|Danışma Aşaması| Stage1[1. Aşama: Uzmanlar İçeriği Analiz Eder]
     Stage1 -->|Düşünce ve raporların paylaşımı| Stage2[2. Aşama: Çapraz Değerlendirme ve Sıralama]
     Stage2 -->|Karşılıklı eleştiri ve tartışma| Stage3[3. Aşama: Chairperson Sentezleme & Deşifre]
-    Stage3 -->|Nihai Konsensüs Raporu| Output([Premium Markdown Raporu])
+    Stage3 -->|Nihai Konsensüs Raporu| Output([Markdown Konsensüs Raporu])
 ```
 
 ---

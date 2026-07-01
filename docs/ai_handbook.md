@@ -12,7 +12,7 @@ python /home/ads/Antigravity/Projeler/LLM_Council/src/council_run.py "<Your Topi
 1. **Multi-Expert Analysis**: 3 specialized agents (Security, Technique, Vision) audit the topic in parallel.
 2. **Deep Transparency**: Agents critique each other's *internal thought processes*, not just their final reports.
 3. **Inner Dialogue**: Internal comms are optimized for machine readability (Technical English/JSON).
-4. **Synthesis**: Results are decoded into a final Premium Turkish report.
+4. **Synthesis**: Results are decoded into a final detailed Turkish report.
 
 ## 📜 Communication Protocol (Rules for You)
 - **Inputs**: Provide full context (Source code, specific concerns).

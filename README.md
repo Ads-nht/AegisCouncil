@@ -1,4 +1,4 @@
-# 🏛️ AegisCouncil (v1.5.0 Premium)
+# 🏛️ AegisCouncil (v1.5.0)
 ### Autonomous 3-Agent LLM Consensus System for Code Reviews, Security Audits, and Architectural Checks
 
 [English](README.md) | [Türkçe](README_TR.md)
@@ -14,7 +14,7 @@ AegisCouncil is an advanced, 3-stage autonomous AI consensus system designed to 
   - **Security Auditor (Senior Cybersecurity Engineer):** Scans for logical flaws and cybersecurity vulnerabilities (OWASP, CWE), producing a calculated Security Integrity Score.
   - **Visionary (Product Visionary & AI Architect):** Identifies modern technological innovations and long-term growth opportunities.
 - **Deep Transparency Protocol:** Peer agents do not merely see final answers; they inspect each other's raw internal thought processes (`thought` fields) to identify inconsistencies or logical fallacies.
-- **Inner Dialogue Protocol:** Council members communicate in a dense, structured technical format (English/JSON) for maximum precision, which is then synthesized by the Chairperson into a premium Turkish report for the user.
+- **Inner Dialogue Protocol:** Council members communicate in a dense, structured technical format (English/JSON) for maximum precision, which is then synthesized by the Chairperson into a detailed Turkish report for the user.
 - **Multi-Model Consensus:** Designed to run across various LLMs (e.g., Grok, Gemini, GPT-4o) via OpenRouter to ensure unbiased, multi-perspective results.
 
 ---
@@ -27,7 +27,7 @@ graph TD
     Orch -->|Consultation Stage| Stage1[Stage 1: Specialists Analyze Context]
     Stage1 -->|Expose thoughts & responses| Stage2[Stage 2: Cross-Critique & Peer Ranking]
     Stage2 -->|Debate & reviews| Stage3[Stage 3: Chairperson Sentez & Decoding]
-    Stage3 -->|Final Consensus Report| Output([Premium Markdown Report])
+    Stage3 -->|Final Consensus Report| Output([Consensus Markdown Report])
 ```
 
 ---

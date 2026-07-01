@@ -104,7 +104,7 @@ ORIGINAL TOPIC: {topic}
 YOUR TASK:
 1. Decode the complex internal dialogue and reasoning between the experts.
 2. Resolve conflicts and define the most secure/innovative path.
-3. CONVERT the final technical consensus into a PREMIUM TURKISH REPORT for the USER.
+3. CONVERT the final technical consensus into a DETAILED TURKISH REPORT for the USER.
 """
         chairperson_prompt = CouncilPrompts.get_prompt("chairperson")
         chairperson = SubAgent("Chairperson", model=self.models[1], system_prompt=chairperson_prompt)

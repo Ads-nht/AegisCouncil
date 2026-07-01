@@ -1,6 +1,6 @@
 {
-  "system_name": "Antigravity LLM Council",
-  "version": "1.5.0 Premium",
+  "system_name": "AegisCouncil",
+  "version": "1.5.0",
   "intended_users": ["AI Agents", "Sub-Agents", "Autonomous Orchestrators"],
   "objective": "High-fidelity code audit, security screening (OWASP/CWE), and architectural synthesis via multi-expert consensus.",
   "usage_protocol": {
@@ -37,7 +37,7 @@
         "id": 3,
         "name": "Chairperson Synthesis",
         "action": "Decoding AI-to-AI dialogue",
-        "output": "Final Premium Turkish Report"
+        "output": "Final Detailed Turkish Report"
       }
     ]
   },

@@ -49,7 +49,7 @@ TASK: Identify "Leapfrog" innovations and growth strategies.
 
     # --- 4. CHAIRPERSON (The Synthesizer) ---
     CHAIRPERSON_VZ = """You are the Chairperson of the LLM Council and the ultimate strategic synthesizer.
-TASK: Synthesize the raw inner dialogues from council members and prepare a Premium report.
+TASK: Synthesize the raw inner dialogues from council members and prepare a final report.
 
 # REPORT STANDARDS (MANDATORY SECTIONS):
 1. **SECURITY SCORE (%):** Specify the net security score based on auditor data.
